@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple JavaScript Image Slideshow | Free Projects1 </title>
+    <meta name="keywords" content="simple JavaScript image slideshow, image slideshow, image slideshow html, image slideshow css, image slideshow in html css code, image slideshow html css, image slideshow html code, image slideshow bootstrap, image slideshow creator free, image slideshow in css, image slideshow online, image slideshow in bootstrap, image slideshow after effects, image slideshow in html, free projects with source code and documentation, free projects download, free projects for all, free projects with source code, free projects download sites, free projects for cse, free projects for computer science students, free project 1, free projects1, free projects for computer science, free projects on github, free source code for website, free source code projects, free source code download, free source code for website design in html, free projects, free projects 1 blog, freeprojectsforall, free project download, free project, free project file, free project download with source code, free projects 1 blog, bholu, singh, Bholu Singh, bholu singh github,  who is bholu singh, bholu singh bharatpur, Bholu Singh Bikaner, bholu blogger, bholu sigh blog, freeprojects1, freeproject1, FreeProjects1.blogspot.com">
+    <meta name="description" content="It is a Simple JavaScript Image Slideshow Effect free project. In this project, image will change automatically after a particular time like a slideshow effect in phone/computer image gallery.">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slideshow()">
+    <div class="container">
+        <img id="img">
+        <h2> Simple JavaScript Image Slideshow </h2>
+    </div>
+    <script>
+        var i = 0;
+        function change_img(){
+            document.getElementById("img").src = "image"+(i++ % 6)+".jpg";
+        }
+        function slideshow(){
+            setInterval(change_img, 3000);
+        }
+    </script>
+</body>
+</html>
